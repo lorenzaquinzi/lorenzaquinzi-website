@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  font-family: Rubik;
+  }
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "head head head head"
+                       "left-nav meiuca meiuca right-nav"
+                       "foot foot foot foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  font-family: Rubik;
+  font-size: 27px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 16px;
+  text-align: center;
+  padding: 8 0 8 0;
+  margin: 0;
+  border-bottom: solid 1px #111;
+}
+
+#page > footer {
+  grid-area: foot;
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 8 0 8 0;
+  margin: 0;
+  border-top: solid 1px #111;
+  height: 40px;
+}
+
+
+.one {
+  grid-area: left-nav;
+  border-right: solid 1px #111;
+  width: 40px;
+}
+
+.two {
+  grid-area: meiuca;
+  border-right: solid 1px #111;
+  grid-column: 2 / 2;
+  grid-row: 1 / 5;
+}
+
+.six {
+  grid-area: right-nav;
+    border-left: solid 1px #111;
+    width: 40px;
+  }

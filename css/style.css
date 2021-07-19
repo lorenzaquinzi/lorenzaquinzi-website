@@ -1,18 +1,23 @@
 body{
   margin: 0;
   font-family: Rubik;
-  overflow: hidden;
+  overflow: scroll;
   }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5, p{
   font-family: Rubik;
   text-transform: uppercase;
   color: #111;
-  letter-spacing: 0.8em;
-  line-height: 100%;
+  letter-spacing: 0.4em;
+  line-height: 200%;
   text-align: center;
   font-weight: 100;
   margin: 0;
+}
+
+a{
+  color:#111;
+  text-decoration: underline;
 }
 
 h4{
@@ -46,26 +51,36 @@ h4{
     }
   }
 
+.dark-mode{
+    background-color: #222;
+  }
+
 
 #page {
   display: grid;
-  width: 100%;
   height: 100%;
-  grid-template-areas: "head head head head head"
-                       "left-nav projects projects hero right-nav"
-                       "left-nav about play hero right-nav"
-                       "foot foot foot foot foot";
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr;
+  grid-template-areas: "head head"
+                       "intro intro"
+                       "music music"
+                       "projects projects"
+                       "project-1 project-2"
+                       "about about"
+                       "clients clients"
+                       "foot foot";
+  grid-template-rows: auto;
+  grid-template-columns: 50% 1fr;
   justify-content: center;
+  grid-row-gap: 150px;
+  padding: 5% 5%;
 }
 
 #page > header {
   grid-area: head;
   padding: 8 0 8 0;
   margin: 0;
-  border-bottom: solid 1px #111;
+  /* border-bottom: solid 1px #111; */
   align-content: center;
+  display: inline-grid;
 }
 
 #page > footer {
@@ -74,38 +89,71 @@ h4{
   margin: 0;
   border-top: solid 1px #111;
   padding: 8 0 8 0;
+  align-content: center;
+  display: inline-grid;
 }
 
 
-.left-nav {
-  grid-area: left-nav;
-  border-right: solid 1px #111;
+.intro{
+  grid-area: intro;
   text-align: center;
+  align-content: center;
+  display: inline-grid;
 }
+
+.music{
+  grid-area: music;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+}
+
 
 .projects {
   grid-area: projects;
-  background-color: red;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+}
+
+.project-1 {
+  grid-area: project-1;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+  height: 500px;
+  background-color: orange;
+}
+
+.project-2 {
+  grid-area: project-2;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+  height: 500px;
+  background-color: pink;
 }
 
 .about {
   grid-area: about;
-  background-color: blue;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
 }
 
-.play {
-  grid-area: play;
-  background-color: yellow;
+.clients {
+  grid-area: clients;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
 }
 
-.hero {
-  grid-area: hero;
-  background-color: black;
-  width: calc(50vw - 40px);
+.moon{
+position: absolute;
+top: 3%;
+right: 5%;
 }
 
-.right-nav {
-  grid-area: right-nav;
-  border-left: solid 1px #111;
-
-  }
+.moon a{
+  text-decoration: none;
+}

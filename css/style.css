@@ -63,20 +63,22 @@ h4{
                        "intro intro"
                        "music music"
                        "projects projects"
-                       "project-1 project-2"
+                       "project-1 project-1"
+                       "project-2 project-2"
+                       "project-3 project-3"
                        "about about"
                        "clients clients"
                        "foot foot";
   grid-template-rows: auto;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: auto 1fr;
   justify-content: center;
-  grid-row-gap: 150px;
+  grid-row-gap: 50px;
   padding: 5% 5%;
 }
 
 #page > header {
   grid-area: head;
-  padding: 8 0 8 0;
+  padding: 8 0 150px 0;
   margin: 0;
   /* border-bottom: solid 1px #111; */
   align-content: center;
@@ -99,6 +101,7 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
+  margin-bottom: 30vh;
 }
 
 .music{
@@ -106,6 +109,7 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
+  margin-bottom: 30vh;
 }
 
 
@@ -121,8 +125,8 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
-  height: 500px;
-  background-color: orange;
+  background-color: thistle;
+  height: 200px;
 }
 
 .project-2 {
@@ -130,8 +134,18 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
-  height: 500px;
+  background-color: beige;
+  height: 200px;
+}
+
+.project-3 {
+  grid-area: project-3;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
   background-color: pink;
+  height: 200px;
+  margin-bottom: 30vh;
 }
 
 .about {
@@ -146,6 +160,7 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
+  margin-bottom: 20vh;
 }
 
 .moon{

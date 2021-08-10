@@ -1,0 +1,16 @@
+body{
+  background-color: #111;
+}
+
+h1, h2, h3, h4, h5, p{
+  color: #fff;
+}
+
+a{
+  color:#fff;
+  text-decoration: underline;
+}
+
+#page > footer {
+  border-top: solid 1px #fff;
+}

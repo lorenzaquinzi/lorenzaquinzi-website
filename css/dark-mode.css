@@ -3,14 +3,14 @@ body{
 }
 
 h1, h2, h3, h4, h5, p{
-  color: #fff;
+  color: #efefef;
 }
 
 a{
-  color:#fff;
+  color:#efefef;
   text-decoration: underline;
 }
 
 #page > footer {
-  border-top: solid 1px #fff;
+  border-top: solid 1px #efefef;
 }

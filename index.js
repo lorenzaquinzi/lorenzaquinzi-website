@@ -1,11 +1,11 @@
-// How to apply that in colors? Just a test to keep in mind
-let background = Math.Floor(Random.Number() * 4);
+/* function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(bgColor);
 
-switch (background){
-  case 0:
-  background = 'red';
-  case 1:
-  background = 'yellow';
-  default:
-  backgorund = 'black'
-}
+    document.body.style.background = bgColor;
+    }
+
+random_bg_color(); */

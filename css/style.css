@@ -63,11 +63,8 @@ h4{
                        "intro intro"
                        "music music"
                        "title title"
-                       "antes antes"
-                       "projects projects"
-                       "project-1 project-1"
-                       "project-2 project-2"
-                       "project-3 project-3"
+                       "workco workco"
+                       "nubank nubank"
                        "about about"
                        "clients clients"
                        "foot foot";
@@ -121,12 +118,20 @@ h4{
   display: inline-grid;
 }
 
-.antes {
-  grid-area: antes;
+.workco {
+  grid-area: workco;
   text-align: center;
   align-content: center;
   display: inline-grid;
-  height: 200px;
+  height: 100px;
+}
+
+.nubank {
+  grid-area: nubank;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+  height: 100px;
 }
 
 
@@ -135,6 +140,7 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
+  margin-top: 20vh;
 }
 
 .clients {

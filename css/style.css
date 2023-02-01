@@ -119,6 +119,14 @@ h4{
   display: inline-grid;
 }
 
+.lemon {
+  grid-area: workco;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+  height: 100px;
+}
+
 .workco {
   grid-area: workco;
   text-align: center;

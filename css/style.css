@@ -64,6 +64,7 @@ h4{
                        "intro intro"
                        "music music"
                        "title title"
+                      "circuit circuit"
                        "lemon lemon"
                        "workco workco"
                        "nubank nubank"
@@ -119,6 +120,14 @@ h4{
   text-align: center;
   align-content: center;
   display: inline-grid;
+}
+
+.circuit {
+  grid-area: circuit;
+  text-align: center;
+  align-content: center;
+  display: inline-grid;
+  height: 100px;
 }
 
 .lemon {
